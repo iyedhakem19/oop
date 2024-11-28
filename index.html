@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo List</title>
+  </head>
+  <body>
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        
+        <h3 class="list-products" >Products</h3>
+        <img src="assets/bag.png">
+        <button onclick="addItemToCart(1, 'bag', 50, 1 )">Add bag ($50)</button>
+        <img src="assets/socks.png">
+        <button onclick="addItemToCart(2, 'socks', 10, 1 )">Add socks ($10 )</button>
+          <img src="assets/baskets.png">
+        <button onclick="addItemToCart(3, 'baskets', 100, 1)">Add baskets ($100 )</button>
+      
+        <h3>Cart</h3>
+        <div id="cartDisplay"></div>
+
+        <h3>Actions</h3>
+        <button onclick="removeItemFromCart(1)">Remove bag from Cart</button>
+        <button onclick="removeItemFromCart(2)">Remove socks from Cart</button>
+        <button onclick="removeItemFromCart(3)">Remove baskets from Cart</button>
+    </div>
+
+
+    <!-- <script src="./todoWithFunctions.js"></script> -->
+    <script src="oop.js"></script>
+  </body>
+</html>
